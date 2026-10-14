@@ -373,3 +373,7 @@ svg{width:1.1em;height:1.1em;fill:currentColor;flex:none}
 @media (max-width:720px){.apply-form{height:720px!important}}
 
 @media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+
+.card-stack{display:grid;gap:16px;align-content:start}
+.olist{margin:8px 0 0;padding-left:1.2em}.olist li{margin-bottom:8px}.olist li::marker{color:var(--gold-ink);font-weight:700}
+.va-role{margin-top:28px}
