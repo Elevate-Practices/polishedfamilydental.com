@@ -377,3 +377,7 @@ svg{width:1.1em;height:1.1em;fill:currentColor;flex:none}
 .card-stack{display:grid;gap:16px;align-content:start}
 .olist{margin:8px 0 0;padding-left:1.2em}.olist li{margin-bottom:8px}.olist li::marker{color:var(--gold-ink);font-weight:700}
 .va-role{margin-top:28px}
+
+/* GHL review widgets */
+.rwidget{margin:28px 0 8px;background:#fff;border-radius:18px;overflow:hidden}
+.rw-label{margin:28px 0 0}
