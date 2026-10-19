@@ -76,6 +76,27 @@ svg{width:1.1em;height:1.1em;fill:currentColor;flex:none}
 .nav a{color:var(--text);text-decoration:none;font-weight:500;font-size:.93rem;padding:6px 0;border-bottom:1px solid transparent;opacity:.85}
 .nav a:hover,.nav a[aria-current]{border-color:var(--gold);color:var(--ink);opacity:1}
 .top-in>.btn{min-height:44px;padding:10px 22px;font-size:.78rem}
+.nav a,.top-in>.btn{white-space:nowrap}
+/* services mega menu: one column per group + a card; opaque porcelain panel under the sticky header */
+.has-mega{position:static}
+.has-mega>a{display:inline-flex;align-items:center;gap:4px}
+.has-mega>a .chev{width:14px;height:14px;opacity:.6;transition:transform .2s}
+.mega{position:absolute;left:0;right:0;top:100%;background:var(--porcelain);border-top:1px solid var(--line);border-bottom:1px solid var(--line);box-shadow:var(--shadow);opacity:0;visibility:hidden;transform:translateY(-6px);transition:opacity .18s,transform .18s,visibility 0s .18s;white-space:normal}
+.has-mega:hover .mega,.has-mega:focus-within .mega{opacity:1;visibility:visible;transform:none;transition-delay:0s}
+.has-mega:hover>a .chev,.has-mega:focus-within>a .chev{transform:rotate(180deg)}
+.mega-in{display:grid;grid-template-columns:repeat(5,1fr) 1.45fr;gap:28px;padding:30px 24px 34px}
+.mega-col{display:grid;align-content:start;gap:2px}
+.nav .mega a{padding:0;border:0;opacity:1}
+.mega-h{display:flex;align-items:center;gap:.5em;font-family:"Playfair Display",Georgia,serif;font-weight:600;font-size:1.08rem;color:var(--ink);margin:0 0 8px}
+.nav .mega-col>a:not(.btn):not(.svc-link){font-size:.9rem;color:var(--text);opacity:.85;padding:5px 0;line-height:1.4}
+.nav .mega-col>a:not(.btn):not(.svc-link):hover{opacity:1;color:var(--primary)}
+.mega-all{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:24px;gap:12px;justify-items:start}
+.mega-all .mega-h{margin:0}
+.mega-p{margin:0;font-size:.92rem;color:var(--muted)}
+.nav .mega .btn-book,.nav .mega .btn-book:hover{color:#fff;opacity:1;min-height:44px;padding:10px 22px;font-size:.78rem;border:1px solid transparent}   /* .nav a would otherwise recolor the button text */
+.nav .mega .btn-book:hover{background:var(--navy)}
+.nav .mega .svc-link,.nav .mega .svc-link:hover{color:var(--ink);opacity:1}
+.nav .mega .svc-link:hover{color:var(--primary)}
 .menu{display:none}
 .menu summary{list-style:none;cursor:pointer;width:48px;height:48px;display:grid;place-content:center;gap:6px}
 .menu summary::-webkit-details-marker{display:none}
