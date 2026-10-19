@@ -402,3 +402,7 @@ svg{width:1.1em;height:1.1em;fill:currentColor;flex:none}
 /* GHL review widgets */
 .rwidget{margin:28px 0 8px;background:#fff;border-radius:18px;overflow:hidden}
 .rw-label{margin:28px 0 0}
+
+/* hover pill on mega-menu links, Gunnell-style (Chris, Oct 19 2026) */
+.nav .mega-col>a:not(.btn):not(.svc-link){padding:7px 10px;margin-inline:-10px;border-radius:8px;transition:background .15s,color .15s}
+.nav .mega-col>a:not(.btn):not(.svc-link):hover,.nav .mega-col>a:not(.btn):not(.svc-link)[aria-current]{background:var(--tint);color:var(--navy);text-decoration:none;opacity:1}
