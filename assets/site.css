@@ -406,3 +406,29 @@ svg{width:1.1em;height:1.1em;fill:currentColor;flex:none}
 /* hover pill on mega-menu links, Gunnell-style (Chris, Oct 19 2026) */
 .nav .mega-col>a:not(.btn):not(.svc-link){padding:7px 10px;margin-inline:-10px;border-radius:8px;transition:background .15s,color .15s}
 .nav .mega-col>a:not(.btn):not(.svc-link):hover,.nav .mega-col>a:not(.btn):not(.svc-link)[aria-current]{background:var(--tint);color:var(--navy);text-decoration:none;opacity:1}
+
+/* post-op pages */
+.postop-chips{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 28px;padding:0;list-style:none}
+.postop-chips a{display:inline-block;padding:8px 16px;border:1px solid var(--line);border-radius:999px;background:#fff;color:var(--ink);font-weight:600;font-size:.92rem;text-decoration:none}
+.postop-chips a:hover{border-color:var(--ink)}
+.postop-every{margin-bottom:20px}
+.postop-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;align-items:start}
+.postop-grid-gum{grid-template-columns:repeat(2,minmax(0,1fr))}
+.postop-card{scroll-margin-top:96px}
+.postop-card h2,.postop-card h3{margin-top:0}
+.postop-learn{margin:.4em 0 0}
+.postop-call{margin-top:24px;padding:26px 30px;border-radius:var(--r);background:#fff;border:1px solid var(--line);border-left:6px solid var(--gold-ink)}
+.postop-call h2{font-size:1.35rem;margin:0 0 .5em}
+.postop-call ul{margin:0;padding-left:1.2em;display:grid;gap:6px}
+.postop-also{margin-top:22px}
+.postop-offices{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin:1em 0}
+.postop-offices h3{margin:0 0 .3em}
+.after-care .acts{margin-top:1em}
+@media(max-width:760px){.postop-grid,.postop-grid-gum,.postop-offices{grid-template-columns:1fr}}
+@media print{
+ .strip,header.top,.foot,.dock,.no-print,.band .acts{display:none!important}
+ .band{background:none!important;color:#000;padding:0 0 12px}
+ .band h1,.band-sub,.band .crumbs,.band .eyebrow{color:#000!important}
+ .sec{padding:12px 0}.card,.postop-call{box-shadow:none;break-inside:avoid;border:1px solid #bbb}
+ body{background:#fff}
+}
